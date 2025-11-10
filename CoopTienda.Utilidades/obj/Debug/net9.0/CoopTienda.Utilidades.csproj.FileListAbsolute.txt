@@ -1,0 +1,12 @@
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda.Utilidades\bin\Debug\net9.0\CoopTienda.Utilidades.deps.json
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda.Utilidades\bin\Debug\net9.0\CoopTienda.Utilidades.dll
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda.Utilidades\bin\Debug\net9.0\CoopTienda.Utilidades.pdb
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda.Utilidades\obj\Debug\net9.0\CoopTienda.Utilidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda.Utilidades\obj\Debug\net9.0\CoopTienda.Utilidades.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda.Utilidades\obj\Debug\net9.0\CoopTienda.Utilidades.AssemblyInfo.cs
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda.Utilidades\obj\Debug\net9.0\CoopTienda.Utilidades.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda.Utilidades\obj\Debug\net9.0\CoopTienda.Utilidades.sourcelink.json
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda.Utilidades\obj\Debug\net9.0\CoopTienda.Utilidades.dll
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda.Utilidades\obj\Debug\net9.0\refint\CoopTienda.Utilidades.dll
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda.Utilidades\obj\Debug\net9.0\CoopTienda.Utilidades.pdb
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda.Utilidades\obj\Debug\net9.0\ref\CoopTienda.Utilidades.dll

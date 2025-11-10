@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/scss/custom.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.4/css/dataTables.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CoopTienda.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar py-0 navbar-expand-sm navbar-toggleable-sm navbar-light bg-white  box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand fs-3 fw-bold text-primary" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img fetchpriority="high" width="85" height="85" src="https://coopnama.coop/wp-content/uploads/2025/09/Frame-1618873773.svg" alt="">
+                    Tienda
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        @* <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li> *@
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" asp-area="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Administracion
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-primary" asp-area="Admin" asp-controller="Almacen" asp-action="Index">Almacen</a></li>
+                                <li><a class="dropdown-item text-primary" asp-area="Admin" asp-controller="Categoria" asp-action="Index">Categoria</a></li>
+                                <li><a class="dropdown-item text-primary" asp-area="Admin" asp-controller="Marca" asp-action="Index">Marca</a></li>
+                                <li><a class="dropdown-item text-primary" asp-area="Admin" asp-controller="Producto" asp-action="Index">Producto</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-primary" asp-area="" asp-controller="" asp-action="">Empresa</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <partial name="_Notificacion.cshtml"></partial>
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-center text-white bg-primary">
+        <div class="container">
+            @{
+                var fecha = DateTime.Now; 
+            }
+            &copy; @fecha.Year CoopTienda - Ing.Carlos Ayala
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.4/js/dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

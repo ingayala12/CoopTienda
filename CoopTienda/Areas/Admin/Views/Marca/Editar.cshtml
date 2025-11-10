@@ -1,0 +1,50 @@
+﻿@model Marca
+@{
+    ViewData["Title"] = "Actualizar Marca";
+}
+
+<div class="container-xl">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            <div class="card bg-white shadow-lg p-4 border-0 mt-5 rounded">
+                <h1 class="mb-3 text-muted">Actualizar Categoria</h1>
+                <form method="post">
+                    <input asp-for="Id"  hidden/>
+                    <div asp-validation-summary="ModelOnly"></div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Nombre" class="form-control" placeholder="Nombre de marca">
+                        <label asp-for="Nombre"></label>
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select asp-for="Estado" class="form-select">
+                            <option selected disabled>Seleccione</option>
+                            <option value="true">Activo</option>
+                            <option value="false">Inactivo</option>
+                        </select>
+                        <label asp-for="Estado"></label>
+                        <span asp-validation-for="Estado" class="text-danger"></span>
+                    </div>
+                    <div class="row gap-2 gap-md-0">
+                        <div class="col-12 col-md-6">
+                            <button class="btn btn-primary w-100">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                Actualizar
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a asp-action="Index" class="btn btn-dark w-100">
+                                <i class="fa-solid fa-arrow-left"></i>
+                                Regresar
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial.cshtml"></partial>
+}
