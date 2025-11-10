@@ -368,7 +368,6 @@ C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\a3y
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\nezrqnk58p-muycvpuwrr.gz
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
-C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\zt59z248hu-nox6ytl7y8.gz
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\b6ywfrpvwb-61n19gt1b8.gz
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\3mxk8729wn-bk229ps8jp.gz
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\9e7h98mahk-p9711qpk1q.gz
@@ -434,8 +433,6 @@ C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\ck3
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\awctu19s3w-muycvpuwrr.gz
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\1uw85getup-87fc7y1x7t.gz
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\3dnxpitqiu-mlv21k5csn.gz
-C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\pyem1dcoqg-21o6exuxut.gz
-C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\jpvndt6pj5-0eqleh4hz0.gz
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\teb1b6ciyj-4zvry0tbky.gz
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\pjggea4viz-4zvry0tbky.gz
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\staticwebassets.build.json
@@ -449,3 +446,6 @@ C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\refint\CoopTie
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\CoopTienda.pdb
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\CoopTienda.genruntimeconfig.cache
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\ref\CoopTienda.dll
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\zt59z248hu-ostn0cu3c5.gz
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\pyem1dcoqg-kh5ct43yy5.gz
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\jpvndt6pj5-xfhktg2agr.gz

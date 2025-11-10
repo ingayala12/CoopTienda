@@ -1,5 +1,6 @@
 ﻿using CoopTienda.AccesoDatos.Data;
 using CoopTienda.AccesoDatos.Repositorio.IRepositorio;
+using CoopTienda.Modelo.Especificaciones;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -30,7 +31,7 @@ namespace CoopTienda.AccesoDatos.Repositorio
             return await dbSet.FindAsync(id);
         }
 
-        public async Task<T> ObtenerPrimero(Expression<Func<T, bool>> filtrar = null, string incluirPropiedades = null)
+        public async Task<T> ObtenerPrimero(Expression<Func<T, bool>> filtrar = null, string incluirPropiedades = null, bool isTracking = true)
         {
             IQueryable<T> query = dbSet;
 
@@ -46,11 +47,15 @@ namespace CoopTienda.AccesoDatos.Repositorio
                     query = query.Include(item);
                 }
             }
+            if (!isTracking)
+            {
+                query = query.AsNoTracking();
+            }
 
             return await query.FirstOrDefaultAsync();
         }
 
-        public async Task<IEnumerable<T>> ObtenerTodos(Expression<Func<T, bool>> filtrar = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string incluirPropiedades = null)
+        public async Task<IEnumerable<T>> ObtenerTodos(Expression<Func<T, bool>> filtrar = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string incluirPropiedades = null, bool isTracking = true)
         {
             IQueryable<T> query = dbSet;
 
@@ -72,7 +77,42 @@ namespace CoopTienda.AccesoDatos.Repositorio
                 query = orderBy(query);
             }
 
+            if (!isTracking)
+            {
+                query = query.AsNoTracking();
+            }
+
             return await query.ToListAsync();
+        }
+
+        public PagedList<T> ObtenerTodosPaginado(Parametros parametros, Expression<Func<T, bool>> filtrar = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string incluirPropiedades = null, bool isTracking = true)
+        {
+            IQueryable<T> query = dbSet;
+
+            if (filtrar is not null)
+            {
+                query = query.Where(filtrar);
+            }
+
+            if (incluirPropiedades is not null)
+            {
+                foreach (var item in incluirPropiedades.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(item);
+                }
+            }
+
+            if (orderBy is not null)
+            {
+                query = orderBy(query);
+            }
+
+            if (!isTracking)
+            {
+                query = query.AsNoTracking();
+            }
+
+            return PagedList<T>.ToPagedList(query, parametros.PageNumber,  parametros.PageSize);
         }
 
         public void Remover(T entidad)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoopTienda.Modelo.Especificaciones;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -13,12 +14,20 @@ namespace CoopTienda.AccesoDatos.Repositorio.IRepositorio
         Task<IEnumerable<T>> ObtenerTodos(
          Expression<Func<T, bool>> filtrar = null,
          Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
-         string incluirPropiedades = null
+         string incluirPropiedades = null,
+         bool isTracking = true
+        );
+
+        PagedList<T> ObtenerTodosPaginado(Parametros parametros, Expression<Func<T, bool>> filtrar = null,
+         Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
+         string incluirPropiedades = null,
+         bool isTracking = true
         );
 
         Task<T> ObtenerPrimero(
             Expression<Func<T, bool>> filtrar = null,
-            string incluirPropiedades = null
+            string incluirPropiedades = null,
+            bool isTracking = true
         );
         Task Agregar(T entidad);
         void Remover(T entidad);

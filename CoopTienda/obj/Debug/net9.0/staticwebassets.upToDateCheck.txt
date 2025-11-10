@@ -69,6 +69,7 @@ C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\wwwroot\js\producto.js
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\imagenes\producto\30aabfc6-8003-4666-98d9-a2204abacbbe.jpg
+wwwroot\imagenes\producto\7fd414e3-5b35-4990-a0a1-dedfeb190249.jpg
 wwwroot\js\almacen.js
 wwwroot\js\categoria.js
 wwwroot\js\marca.js
