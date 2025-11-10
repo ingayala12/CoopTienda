@@ -1,8 +1,51 @@
-﻿@{
+﻿@model IEnumerable<Producto>
+@using System.Globalization
+
+@{
     ViewData["Title"] = "Inicio";
 }
 
-<h1>Lista de Productos</h1>
+<div class="container-xl">
+    <div class="row my-4">
+        <div class="col-12 col-md-6">
+            <div class="input-group mb-3">
+                <input type="text" name="buscar" class="form-control" placeholder="Buscar..." aria-label="Buscar" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        @if (Model.Count() > 0)
+        {
+            @foreach (var producto in Model)
+            {
+                <div class="col-6 col-md-3">
+                    <div class="card border-0 shadow-lg bg-white h-100">
+                        <div class="badge bg-primary w-25">@producto.Codigo</div>
+                        <a asp-action="Detalle" asp-controller="Producto" asp-area="Admin"><img src="@producto.ImagenUrl" class="card-img-top" /></a>
+                        <div class="card-body">
+                            <h5 class="fw-normal">@producto.Descripcion</h5>
+                            <h4 class="text-primary">@producto.Costo.ToString("C", new CultureInfo("en-US"))</h4>
+                            <a asp-area="Admin" asp-controller="Producto" asp-action="Detalle" class="btn btn-dark w-100 mt-3">
+                                <i class="fa-solid fa-tags"></i>
+                                Detalle
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="alert alert-danger">
+                No Hay Registro
+            </div>
+        }
+    </div>
+</div>
 
 
 
