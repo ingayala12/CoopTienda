@@ -2,22 +2,16 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 #nullable disable
 
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Text.Encodings.Web;
-using System.Threading;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
-using Microsoft.Extensions.Logging;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text;
+using System.Text.Encodings.Web;
 
 namespace CoopTienda.Areas.Identity.Pages.Account
 {
@@ -74,7 +68,7 @@ namespace CoopTienda.Areas.Identity.Pages.Account
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
-            [Required]
+            [Required(ErrorMessage = "El email es obligatorio")]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
@@ -83,20 +77,46 @@ namespace CoopTienda.Areas.Identity.Pages.Account
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
-            [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [Required(ErrorMessage = "El password es obligatorio")]
+            [StringLength(100, ErrorMessage = "El {0} debe tener al menos {2} y como máximo {1} caracteres de longitud.", MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
             public string Password { get; set; }
+
+            [Required(ErrorMessage = "El telefono es obligatorio")]
+            [Display(Name = "Telefono")]
+            [DataType(DataType.PhoneNumber)]
+            public string PhoneNumber { get; set; }
 
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             [DataType(DataType.Password)]
-            [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Display(Name = "Confirmar password")]
+            [Compare("Password", ErrorMessage = "La contraseña y la contraseña de confirmación no coinciden.")]
             public string ConfirmPassword { get; set; }
+
+            [Required(ErrorMessage = "El nombre es obligatorio")]
+            public string Nombre { get; set; }
+
+            [Required(ErrorMessage = "El apellido es obligatorio")]
+            public string Apellido { get; set; }
+
+            [Required(ErrorMessage = "La direccion es obligatoria")]
+            public string Direccion { get; set; }
+
+            [Required(ErrorMessage = "La cudad es obligatoria")]
+            public string Ciudad { get; set; }
+
+            [Required(ErrorMessage = "El pais es obligatorio")]
+            public string Pais { get; set; }
+
+            [Required(ErrorMessage = "La cedula es obligatoria")]
+            public string Cedula { get; set; }
+
+            [NotMapped]
+            public string Role { get; set; }
         }
 
 

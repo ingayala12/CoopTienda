@@ -19,7 +19,7 @@
         </div>
     </form>
 
-    <div class="row mb-2">
+    <div class="row mb-4">
         @if (Model.Count() > 0)
         {
             @foreach (var producto in Model)
@@ -48,28 +48,30 @@
         }
     </div>
 
-    <a asp-action="Index"
-       asp-route-pageNumber="@(1)" class="btn btn-primary @ViewData["Previo"]"
-       asp-route-busquedaActual="@ViewData["BusquedaActual"]">
-        <i class="fa-solid fa-backward-step"></i>
-    </a>
+    <div class="mb-3 text-center">
+        <a asp-action="Index"
+           asp-route-pageNumber="@(1)" class="btn btn-primary @ViewData["Previo"]"
+           asp-route-busquedaActual="@ViewData["BusquedaActual"]">
+            <i class="fa-solid fa-backward-step"></i>
+        </a>
 
-    <a asp-action="Index"
-       asp-route-pageNumber="@((int)ViewData["PageNumber"] - 1)" class="btn btn-primary @ViewData["Previo"]"
-       asp-route-busquedaActual="@ViewData["BusquedaActual"]">
-        Anterior
-    </a>
-    <span>Pagina @ViewData["PageNumber"] de @ViewData["TotalPaginas"]</span>
-    <a asp-action="Index"
-       asp-route-pageNumber="@((int)ViewData["PageNumber"] + 1)" class="btn btn-primary @ViewData["Siguiente"]"
-       asp-route-busquedaActual="@ViewData["BusquedaActual"]">
-        Siguiente
-    </a>
-    <a asp-action="Index"
-       asp-route-pageNumber="@ViewData["TotalPaginas"]" class="btn btn-primary @ViewData["Siguiente"]"
-       asp-route-busquedaActual="@ViewData["BusquedaActual"]">
-        <i class="fa-solid fa-forward-step"></i>
-    </a>
+        <a asp-action="Index"
+           asp-route-pageNumber="@((int)ViewData["PageNumber"] - 1)" class="btn btn-primary @ViewData["Previo"]"
+           asp-route-busquedaActual="@ViewData["BusquedaActual"]">
+            Anterior
+        </a>
+        <span>Pagina @ViewData["PageNumber"] de @ViewData["TotalPaginas"]</span>
+        <a asp-action="Index"
+           asp-route-pageNumber="@((int)ViewData["PageNumber"] + 1)" class="btn btn-primary @ViewData["Siguiente"]"
+           asp-route-busquedaActual="@ViewData["BusquedaActual"]">
+            Siguiente
+        </a>
+        <a asp-action="Index"
+           asp-route-pageNumber="@ViewData["TotalPaginas"]" class="btn btn-primary @ViewData["Siguiente"]"
+           asp-route-busquedaActual="@ViewData["BusquedaActual"]">
+            <i class="fa-solid fa-forward-step"></i>
+        </a>
+    </div>
 </div>
 
 

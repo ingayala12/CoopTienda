@@ -449,3 +449,14 @@ C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\ref\CoopTienda
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\zt59z248hu-ostn0cu3c5.gz
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\pyem1dcoqg-kh5ct43yy5.gz
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\jpvndt6pj5-xfhktg2agr.gz
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\iv6vej31sp-753x2a7luo.gz
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\41b21d7oq1-9n5k4n1i9w.gz
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\d55leo8vf9-otist8tx50.gz
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\q73dnza32r-6ab46uy64p.gz
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\n08y69prib-hshcus548m.gz
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\0d7qx6tmsq-vuiyv8ufvi.gz
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\keyga1h05b-63p576mbvy.gz
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\otmncay1f7-j1hy9ubgx3.gz
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\ukfwwlmm9i-w088yxvkad.gz
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\i70o5vd41t-tfstzwcwtp.gz
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\gd3f3swkck-pnz5q21qg9.gz
