@@ -21,5 +21,6 @@ namespace CoopTienda.AccesoDatos.Data
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Marca> Marca { get; set; }
         public DbSet<Producto> Producto { get; set; }
+        public DbSet<UsuarioAplicacion> UsuarioAplicacion { get; set; }
     }
 }

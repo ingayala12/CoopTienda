@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CoopTienda.Modelo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbada6e971c2d6c493a9758d3cc40f760d35b15d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f73cae21da631756586db84ff4dfe098aaab5137")]
 [assembly: System.Reflection.AssemblyProductAttribute("CoopTienda.Modelo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CoopTienda.Modelo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
