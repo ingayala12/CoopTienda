@@ -2,12 +2,14 @@
 using CoopTienda.Modelo;
 using CoopTienda.Modelo.ViewsModels;
 using CoopTienda.Utilidades;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace CoopTienda.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = DS.Role_Admin +","+ DS.Role_Inventario)]
     public class ProductoController : Controller
     {
         private readonly IUnidadTrabajo unidadTrabajo;

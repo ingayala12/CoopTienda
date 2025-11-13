@@ -1,12 +1,14 @@
 ﻿using CoopTienda.AccesoDatos.Repositorio.IRepositorio;
 using CoopTienda.Modelo;
 using CoopTienda.Utilidades;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace CoopTienda.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = DS.Role_Admin)]
     public class MarcaController : Controller
     {
         private readonly IUnidadTrabajo unidadTrabajo;

@@ -10,5 +10,9 @@ namespace CoopTienda.Utilidades
     {
         public const string Exitoso = "Exitoso";
         public const string Error = "Error";
+
+        public const string Role_Admin = "Admin";
+        public const string Role_Cliente = "Cliente";
+        public const string Role_Inventario = "Inventario";
     }
 }

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<UsuarioAplicacion>
+@{
+    ViewData["Title"] = "Lista de Usuarios";
+}
+
+<div class="container-xl">
+    <div class="card bg-white shadow-lg p-3 border-0 mt-5 rounded">
+        <h1 class="text-center">Lista de Usuarios</h1>
+        <div class="d-flex justify-content-md-end ">
+            <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-primary mb-3">
+                <i class="fa-solid fa-plus"></i>
+                Nuevo Usuario
+            </a>
+        </div>
+        @if (Model.Count() > 0)
+        {
+            <div class="table-responsive">
+                <table id="tblDatos" class="table table-hover table-striped w-100">
+                    <thead>
+                        <tr>
+                            <th>Email</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>cedula</th>
+                            <th>Telefono</th>
+                            <th>Rol</th>
+                            <th class="text-center">Accion</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-danger border-0">
+                No Hay Registro
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+
+    <script src="~/js/usuario.js"></script>
+}
+

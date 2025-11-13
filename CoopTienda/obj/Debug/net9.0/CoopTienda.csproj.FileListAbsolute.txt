@@ -460,3 +460,4 @@ C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\otm
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\ukfwwlmm9i-w088yxvkad.gz
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\i70o5vd41t-tfstzwcwtp.gz
 C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\gd3f3swkck-pnz5q21qg9.gz
+C:\Users\PC\Desktop\Tienda\CoopTienda\CoopTienda\obj\Debug\net9.0\compressed\gbttq0sb7f-4tindciil9.gz

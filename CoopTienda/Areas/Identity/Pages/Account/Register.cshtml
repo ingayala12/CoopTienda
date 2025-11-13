@@ -1,4 +1,5 @@
 ﻿@page
+@using CoopTienda.Utilidades
 @model RegisterModel
 @{
     ViewData["Title"] = "Registrarse";
@@ -75,7 +76,15 @@
                             <label asp-for="Input.Direccion"></label>
                             <span asp-validation-for="Input.Direccion" class="text-danger"></span>
                         </div>
-                        
+                        @if (User.IsInRole(DS.Role_Admin))
+                        {
+                            <div class="form-floating mb-3">
+                                <select asp-for="@Model.Input.Role" asp-items="@Model.Input.ListaRol" class="form-select">
+                                    <option selected disabled>Seleccione Rol</option>
+                                </select>
+                                <label asp-for="@Model.Input.Role"></label>
+                            </div>
+                        }
                         <div class="form-floating mb-3">
                             <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
                             <label asp-for="Input.Password">Password</label>
